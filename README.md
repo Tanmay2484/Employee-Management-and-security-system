@@ -27,6 +27,61 @@ Logout: Users can log out of the system to protect their session from unauthoriz
 Signup: Users can create a new employee profile, including a password during signup. Password creation follows strict rules to enhance security.
 In summary, this project demonstrates how to implement CRUD operations within an object-oriented framework, emphasizing security through user authentication (login and signup) and session management (logout). It provides a practical example of using C++ to build a simple but functional employee management system with these features.
 
+How this project works
+
+Employee Class:
+
+The project starts with the definition of the Employee class, which represents individual employees.
+The class contains private member variables such as id, name, gender, position, salary, and password.
+Member Functions:
+
+The Employee class has member functions to set and get the employee's attributes, such as setName, setGender, setSalary, etc.
+There is also a function input to input employee details interactively, including password validation.
+The isValidPassword function checks if the entered password meets certain criteria.
+The output function displays an employee's details in a formatted manner.
+Main Function:
+
+The main function sets up the main menu for the program and manages user interactions.
+Vector of Employees:
+
+A vector employees is used to store instances of the Employee class, effectively creating a database of employees.
+User Authentication:
+
+Users can either sign up or log in.
+During signup, users create an employee profile with their details, including a password.
+Passwords must meet specific criteria (e.g., length, starting with a capital letter, containing special characters).
+Main Menu:
+
+After authentication, users can choose from several options in the main menu, depending on whether they are logged in or not.
+Logged-In State:
+
+If the user logs in successfully, they enter a logged-in state and gain access to additional options.
+Employee Management:
+
+Users can input new employee details, list all employees, search for employees by ID, name, or position, sort employees by name or salary, delete employees, or update employee information.
+Logout and Exit:
+
+Users can choose to log out, which returns them to the main menu or exit the program entirely.
+Flow Control:
+
+The program uses loops and switch statements to navigate between menu options and sub-menus.
+It ensures proper user authentication and authorization for certain actions (e.g., editing employee information).
+Data Persistence:
+
+Employee data is stored in memory as long as the program is running. However, it is not saved to a file for persistence beyond the current session.
+Input Validation:
+
+Throughout the program, there is input validation to ensure that users provide valid data and follow specific rules (e.g., password validation).
+User-Friendly Output:
+
+Employee data is displayed in a well-formatted table-like format, making it user-friendly.
+Security Considerations:
+
+The program validates passwords and ensures that only authorized users can make changes to employee data.
+Exit and Error Handling:
+
+Users can choose to exit the program gracefully, and the program handles invalid input gracefully with error messages.
+
 
 
 
